@@ -1,0 +1,184 @@
+ol, ul {
+  padding: 0;
+}
+
+.first-block__header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #424242;
+}
+.first-block__header-container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  flex-wrap: wrap;
+}
+.first-block__header-logo {
+  z-index: 5;
+}
+.first-block__header-menu {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.__invisible {
+  display: none;
+}
+
+.__active {
+  display: block;
+}
+
+.menu__arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #fff;
+  margin: 0 0 0 5px;
+}
+.menu__icon {
+  display: block;
+  z-index: 5;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+}
+.menu__icon::before, .menu__icon::after,
+.menu__icon span {
+  left: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+}
+.menu__icon::before, .menu__icon::after {
+  content: "";
+}
+.menu__icon::before {
+  top: 0;
+}
+.menu__icon::after {
+  bottom: 0;
+}
+.menu__icon span {
+  top: 8px;
+}
+.menu__body {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: #424242;
+  overflow: auto;
+}
+.menu__list li.__active .menu__sublist {
+  display: block;
+}
+.menu__list > li > a {
+  padding: 8px 20px;
+  display: block;
+  border-bottom: 1px solid #312a2a;
+}
+.menu__sublist {
+  position: relative;
+}
+.menu__sublist li:last-child {
+  box-shadow: 0 6px 12px 2px rgba(0, 0, 0, 0.404);
+}
+.menu__sublink {
+  padding: 8px 20px 8px 35px;
+  display: block;
+  border-bottom: 1px solid #312a2a;
+}
+
+@media screen and (min-width: 767px) {
+  .end-of-menu {
+    display: none;
+  }
+  .__invisible {
+    display: block;
+  }
+  .first-block__header {
+    background: none;
+    position: relative;
+  }
+  .first-block__header-container {
+    justify-content: unset;
+    padding: 0;
+  }
+  .first-block__header-logo {
+    margin: 0 61px 0 0;
+  }
+  .menu__body {
+    position: relative;
+    background-color: transparent;
+    overflow: unset;
+  }
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .menu__list > li > a {
+    padding: 0;
+  }
+  .menu__list > li a {
+    border: 0;
+  }
+  .menu__list > li .link__border {
+    border: 0;
+  }
+  .menu__list > li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .menu__list > li:hover {
+    color: #fff;
+    border-bottom: 5px solid #f04d35;
+    transition: border 0.09s;
+  }
+  .menu__list > li:hover .menu__sublist {
+    visibility: visible;
+    pointer-events: all;
+  }
+  .menu__sublist {
+    position: absolute;
+    min-width: 160px;
+    top: 83%;
+    left: 9;
+    background-color: #f04d35;
+    padding: 9px 0;
+  }
+  .menu__sublist li:last-child {
+    box-shadow: none;
+  }
+  .menu__sublist > li {
+    white-space: nowrap;
+  }
+  .menu__sublink {
+    display: block;
+    padding: 0 20px;
+  }
+  .menu__sublink:hover {
+    background-color: #d13018;
+  }
+  .menu__sublist {
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .menu__icon {
+    display: none;
+  }
+}

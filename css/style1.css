@@ -1,0 +1,247 @@
+.footer-region{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.border-social{
+    border-top: 2px solid #f7f7f7;
+}
+
+.phone, .email{
+    font-size:20px;
+}
+
+.email-img, .phone-img{
+    width: 45px;
+    height: 45px;
+}
+
+.form-item{
+    width: 100%;
+}
+
+.info{
+    background: transparent;
+}
+
+.info:focus{
+    background: transparent;
+}
+
+.form-control:focus{
+    color: #f7f7f7;
+    background-color: transparent;
+    border-color: #f14d34;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
+}
+.text-footer-header{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.215;
+    color: #fff;
+}
+
+.form-politics{
+    color: #f14d34;
+    text-decoration: none;
+}
+
+.form-politics:hover{
+    color: #f14d34;
+    text-decoration: underline;
+}
+
+.text-footer-extra{
+    line-height: 1.55;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(256,256,256,.7);
+    margin-bottom: 200px;
+} 
+
+.footer-region-background{
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),url(img/D-flying.svg) no-repeat top center,url(img/D-footer.svg) no-repeat bottom right,#040613;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.btn-footer{
+    border: 2px solid #f14d34;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    transition: background 300ms;
+    background: #f14d34;
+}
+
+.btn-footer:hover{
+    color: #fff;
+    background: transparent;
+}
+
+
+.arrows-slick{
+    border-top: 0;
+    border-left: solid 1px rgb(41, 43, 44, 0.25);
+}
+
+.review-sign{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.review-content{
+    height: auto;
+    position: relative;
+    background: white;
+}
+
+.review-content:before{
+    content: "";
+    display: block;
+    background: #fff;
+    opacity: .5;
+    border:  solid 1px rgb(41, 43, 44, 0.25);
+    box-sizing: border-box;
+    box-shadow:0 4px 60px rgb(41, 43, 44, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    top: -44px;
+    bottom: 0;
+    left: 64px;
+    right: 64px;
+    z-index: -1;
+}
+
+.review-content:after{
+    content: "";
+    display: block;
+    background: #fff;
+    opacity: .34;
+    border: solid 1px rgb(41, 43, 44, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    top: -78px;
+    bottom: 0;
+    left: 128px;
+    right: 128px;
+    z-index: -2;
+}
+
+.reviewSlide img{
+    margin:0 0 2em 0;
+}
+#prevReview{
+    background: url(left.svg) no-repeat center;
+    background-size: contain;
+    width:16px;
+    height:32px;
+    margin:0 16px 0 0;
+}
+#nextReview{
+    background: url(right.svg) no-repeat center;
+    background-size: contain;
+    width:16px;
+    height:32px;
+    margin:0 0 0 16px;
+}
+.arrows-block{
+    font-size: 24px;
+    color:grey;
+}
+.current{
+    color:black;
+}
+#nextReview:focus, #prevReview:focus{
+    box-shadow: 0 4px 60px transparent;
+}
+
+.workingWithCarouselWrapper{
+    margin: 50px 0 5px 0;
+}
+
+.workingwithInside{
+    border: solid 2px grey;
+    border-radius: 5px;
+    margin:0 6px;
+}
+
+.workingwithInside > img {
+    width: 100%;
+    height: auto;
+}
+
+.review-bg{
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+    display: block;
+}
+
+#reviewContainerCarousel{
+    max-width: 768px;
+    padding:  60px 5px 60px 60px;
+    border-radius: 5px;
+    border: solid 1px rgb(41, 43, 44, 0.25);
+    box-shadow: 0 4px 60px rgb(41, 43, 44, 0.25);
+    width: 100%;
+}
+@media screen and (max-width: 760px){
+    .arrows-slick{
+        border-top: solid 1px grey;
+        border-left: 0;
+    }
+    #reviewContainerCarousel{
+        max-width: 440px;
+        font-size: 15px;
+        padding: 0;
+    }
+    .review-content:before{
+        left: 32px;
+        right: 32px;
+        top: -30px;
+    }
+    .review-content:after{
+        left: 68px;
+        right: 68px;
+        top: -48px
+    }
+    .review-sign{
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    #reviewContainerCarousel{
+        max-width: 340px;
+        font-size: 15px;
+    }
+    .review-content:before{
+        left: 16px;
+        right: 16px;
+        top: -20px;
+    }
+    .review-content:after{
+        left:34px;
+        right:34px;
+        top:-34px;
+    }
+    .review-sign{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}

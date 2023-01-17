@@ -1,0 +1,114 @@
+.first-block__content {
+  padding: 39px 0 55px 0;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.first-block-text {
+  text-align: center;
+}
+.first-block-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0 0 20px 0;
+}
+.first-block-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.4px;
+  margin: 0 0 55px 0;
+  opacity: 0.8;
+}
+.first-block-button {
+  display: inline-block;
+  height: 60px;
+  line-height: 12px;
+  padding: 22px 79px 26px 79px;
+  border: 2px solid #f14d34;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  margin-bottom: 50px;
+}
+.first-block-button:hover {
+  background: #f14d34;
+  transition: background 0.3s;
+}
+.first-block-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.first-block-cards .card {
+  background: transparent;
+  flex-basis: 40%;
+  height: 80px;
+  box-sizing: content-box;
+  border-left: 3px solid #f14d34;
+  padding-left: 10px;
+  margin: 0 0 30px 0;
+}
+.first-block-cards .card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 4px 0;
+}
+.first-block-cards .card-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0.7;
+}
+.first-block-cards .card:first-child {
+  align-self: center;
+}
+.first-block-cards .card:first-child .card-title {
+  font-size: 48px;
+  line-height: 29px;
+}
+.first-block-cards .card:nth-child(n) {
+  align-self: center;
+}
+.first-block-cards .card:nth-child(n+4) {
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 767px) {
+  .first-block__header-container {
+    padding: 0 0 0 50px;
+  }
+  .first-block-text {
+    text-align: unset;
+    margin-right: 110px;
+  }
+  .first-block__content {
+    padding: 140px 0 154px 0;
+    flex-direction: unset;
+  }
+  .first-block-title {
+    font-size: 52px;
+    line-height: 60px;
+    margin: 0 0 15px 0;
+  }
+  .first-block-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .first-block-button {
+    margin-bottom: 0;
+  }
+  .first-block-cards .card {
+    flex-basis: 30%;
+    margin: 0;
+  }
+}
