@@ -1,0 +1,90 @@
+.fifth-block{
+    padding: 24px 0 50px 0;
+    &__title{
+        display: block;
+        font-size: 33.35px;
+        line-height: 40px;
+        font-weight: 500;
+        margin: 0 0 24px 0;
+        text-align: center;
+    }
+    &__tarifs{
+        display: flex;
+        flex-direction: column;
+    }
+    &__tarif{
+        font-weight: 500;
+        padding: 24px 8px 16px;
+        margin: 0 0 20px 0;
+        border: solid 2px #e5e5e5;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+        &-price-header{
+            font-size: 30px;
+            line-height: 37px;
+            color: #f14d34;
+            margin: 0 0 8px;
+        }
+        &-body{
+            font-size: 16px;
+            line-height: 19.2px;
+            border-top: 2px solid #e5e5e5;
+            li{
+                margin: 0 0 15px 20px;
+            }      
+        }
+        &-button{
+            display: block;
+            text-align: center;
+            color: #f14d34;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 6px 12px;
+            border: 1px solid #f14d34;
+            border-radius: 5px;
+            transition: all 0.5s ease-in-out;
+            text-decoration: none;
+        } 
+    &:hover{
+            z-index: 1;
+            box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
+            .fifth-block__tarif-button{
+                color: #fff;
+                background: #f14d34;
+            }
+        }
+    }
+    &__text,&__link{
+        display: block;
+        text-align: center;
+        color: grey;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__text{
+        margin: 50px 0 16px;
+    }
+    &__link{
+        text-decoration: underline;
+        &:hover{
+            color: #f14d34;
+        }
+    }
+}
+@media screen and(min-width:767px){
+    .fifth-block{
+    padding: 146px 0px 160px;
+    &__title{
+        font-size: 40px;
+        line-height: 48px;
+    } 
+    &__tarifs{
+        flex-direction: unset;
+        justify-content: space-between;
+    }
+    &__tarif{
+        flex-basis: 32%;
+        margin: 0;
+    }
+}
+}
